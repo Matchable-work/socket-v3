@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  socket-app:
+    build: .
+    ports:
+      - "4201:4201"
+    env_file:
+      - .env
+    depends_on:
+      - redis
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports:
+      - "6379:6379"
