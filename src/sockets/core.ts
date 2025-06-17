@@ -18,7 +18,7 @@ export function initSocketLayer(io: Server): void {
 
   io.on('connection', (socket: Socket) => {
     const user = socket.data.user;
-    const userId = user.id;
+    const userId = user.uuid;
 
     totalConnections.inc();
     logger.info(`Client connected: ${socket.id}, user ${userId}`);
@@ -38,7 +38,7 @@ export function initSocketLayer(io: Server): void {
     chatEvents(socket);
     // notifEvents(socket);
     presenceEvents(socket);
-    friendsEvents(socket);
+    // friendsEvents(socket);
     // jobEvents(socket);
     // teamEvents(socket);
     systemEvents(socket);
