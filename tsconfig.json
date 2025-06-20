@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020"],
-    "rootDir": "src",
-    "outDir": "dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
+    "target": "ES2020",            // ✅ Modern JS output (good for Node 14+)
+    "module": "commonjs",          // ✅ Compatible with Node + PM2 (no need for "type": "module")
+    "lib": ["ES2020"],             // ✅ Ensures Promise, async/await, etc. work
+    "rootDir": "src",              // ✅ Good separation of source and build
+    "outDir": "dist",              // ✅ Keeps build clean
+    "strict": true,                // ✅ Enforces good typing
+    "esModuleInterop": true,       // ✅ Enables `import express from 'express'`
+    "skipLibCheck": true           // ✅ Faster builds, skips checking node_modules
   },
   "include": ["src/**/*"]
 }
