@@ -1,7 +1,29 @@
-/node_modules
-.idea
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/*.tsbuildinfo
+
+# Logs
 yarn-error.log
-.vscode
-dist/
-dist
+npm-debug.log
+pnpm-debug.log
+
+# Env files
 .env
+.env.*   # for things like .env.stage, .env.production
+
+# Editor config
+.vscode/
+.idea/
+
+# PM2 logs (optional, if stored locally)
+/logs/
+pids
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
