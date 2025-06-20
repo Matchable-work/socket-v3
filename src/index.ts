@@ -15,9 +15,12 @@ const io = new Server(server, {
   cors: {
     origin: [
       'https://matchable.work',
+      'https://api-matchable.work',
+      'https://stage-api-matchable.work',
       'https://recruiter.matchable.work',
       'https://matchable-api.test',
       'http://localhost:3000',
+      'http://127.0.0.1:8000',
     ],
     methods: ['GET', 'POST'],
     credentials: true,
