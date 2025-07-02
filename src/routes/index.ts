@@ -2,6 +2,13 @@ import { Router } from 'express';
 import health from './health.route';
 
 const router = Router();
-router.use('/', health);
+
+// ✅ Root welcome page
+router.get('/', (_req, res) => {
+    res.render('welcome'); // will render views/welcome.ejs
+});
+
+// Other routes
+router.use('/admin', health);
 
 export default router;

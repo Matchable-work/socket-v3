@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Matchable Socket Server</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            padding: 60px;
+            text-align: center;
+            color: #1f2937;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 2rem;
+            color: #6b7280;
+        }
+        .badge {
+            background: #111827;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 8px;
+            font-size: 1rem;
+            color: white;
+            background-color: #3b82f6;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+<h1>🎉 Welcome to Matchable Socket Server</h1>
+<p>Everything is running smoothly.</p>
+<div class="badge">Node.js + Socket.IO + Redis</div>
+
+<div class="btn-group">
+    <a class="btn" href="/admin/logs" target="_blank">View Logs</a>
+    <a class="btn" href="/admin/health" target="_blank">Health Check</a>
+    <a class="btn" href="/admin/metrics" target="_blank">Matrics</a>
+    <a class="btn" href="/admin/active-users" target="_blank">Active Users</a>
+</div>
+</body>
+</html>
