@@ -48,6 +48,7 @@ initSocketLayer(io);
 
 // Start server
 const PORT = process.env.PORT || 4200;
+console.log('[Redis] Server listening on port ', PORT);
 server.listen(PORT, () => {
   console.log(`🚀 Server listening on http://localhost:${PORT}`);
 });

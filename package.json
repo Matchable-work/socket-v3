@@ -15,7 +15,8 @@
     "clean": "rm -rf dist",
     "start": "node dist/index.js",
     "worker": "ts-node-dev --respawn --transpile-only src/queues/index.ts",
-    "prod": "pm2 start pm2.config.js --env production"
+    "prod": "pm2 start pm2.config.js --env production",
+    "deploy": "yarn build && pm2 delete all && pm2 start pm2.config.js --env production && pm2 save"
   },
   "dependencies": {
     "@socket.io/redis-adapter": "^8.3.0",
